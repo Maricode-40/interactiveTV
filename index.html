@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Television</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="row tvAndRemote">
+        <!--class inside the main container containing the row with the TV and the remote control-->
+        <div class="col tvAndLegs">
+          <div id="tvborder">
+            <div id="offScreen" class="basicScreen">
+              <!--offScreen’ tv screen class and ‘ChannelNumber dedicated to the chosen channel info box-->
+              <div class="selectedChannelControl">
+                <div
+                  id="channelNumber"
+                  class="row selectedChannel"
+                  display="none"
+                ></div>
+              </div>
+              <div class="indexContent" id="indexContent">
+                <!--contents of the tv home screen. Inside is the picture, clock and date.-->
+                <div class="row clockAndWelcome">
+                  <div class="row OnPicture">
+                    <img
+                      src="./img/20170710224403431_5KTDXIN0.jpg"
+                      id="welcomePic"
+                    />
+                    <div class="clockAndDate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="verticalLeg"></div>
+          <div class="horizontalLeg"></div>
+          <!--television legs and edge of this one in the same row with column orientation -->
+        </div>
+        <div id="remote">
+          <div class="row" id="filaOnOff">
+            <div class="col onBtn" id="onOff">O</div>
+            <div class="col option" id="Options"></div>
+          </div>
+          <div class="row" id="filaVolumeCh">
+            <div class="col" id="Volume">VOL</div>
+            <div class="col" id="ChannelsNextPrev">CH</div>
+          </div>
+          <div class="row" id="filaButtons1-3">
+            <div id="chnl1" class="button">1</div>
+            <div id="chnl2" class="button">2</div>
+            <div id="chnl3" class="button">3</div>
+          </div>
+          <div class="row" id="filaButtons4-6">
+            <div id="chnl4" class="button">4</div>
+            <div id="chnl5" class="button">5</div>
+            <div id="chnl6" class="button">6</div>
+          </div>
+          <div class="row" id="filaButtons7-9">
+            <div id="chnl7" class="button">7</div>
+            <div id="chnl8" class="button">8</div>
+            <div id="chnl9" class="button">9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
