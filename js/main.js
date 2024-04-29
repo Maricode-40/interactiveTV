@@ -5,7 +5,7 @@ let arrayButtons = Array.from(buttons);
 let offScreen = document.getElementById("offScreen");
 
 let indexContent = document.getElementById("indexContent");
-//Aqui están todas las variables necesarias llamdas
+//Here are all the necessary variables to be called 
 const powerBtn = document.getElementById("onOff");
 
 const selectedChannel = document.getElementsByClassName("selectedChannel");
